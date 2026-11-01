@@ -1,2 +1,361 @@
-/* Project 1: write all of your styles in this file.
-   Follow the layout, font and colour guide in the project brief. */
+/* Project 1: Write all of the styles in this file. */
+  
+/* Follow the layout, font and colour guide in the project brief. */
+
+/* Basic page styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #1A202C;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Headings and logo */
+h1,
+h2,
+h3,
+.logo {
+  font-family: "Fraunces", Georgia, serif;
+  color: #22543D;
+}
+
+/* Main page heading */
+h1 {
+  font-size: 52px;
+}
+
+/* Section headings */
+h2 {
+  font-size: 36px;
+}
+
+/* Smaller feature headings */
+h3 {
+  font-size: 22px;
+}
+
+/* Market logo */
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+/* Main content container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Add consistent vertical spacing to each section */
+section {
+  padding: 80px 0;
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  background-color: #2F855A;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: #276749;
+}
+
+/* Make the signup form button fill the form width */
+#signup-form .btn {
+  width: 100%;
+}
+/* Header layout */
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header spacing and bottom border */
+.site-header {
+  padding: 16px 0;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+/* Remove the underline from the logo */
+.logo {
+  text-decoration: none;
+}
+
+
+/* Navigation list layout */
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigation link appearance */
+.nav-links a {
+  color: #2D3748;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Navigation link hover effect */
+.nav-links a:hover {
+  color: #2F855A;
+  text-decoration: underline;
+}
+
+
+/* Hero section layout */
+.hero {
+  background-color: #F0FFF4;
+}
+
+/* Arrange hero text and image in two columns */
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+/* Make the hero paragraph slightly larger and add spacing below it */
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+/* Features section heading */
+.features h2 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/* Arrange feature cards in three columns */
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* Style each individual feature card */
+.feature {
+  padding: 32px;
+  border-radius: 12px;
+  background-color: #F7FAFC;
+}
+
+
+/* Visit section background */
+.visit {
+  background-color: #F0FFF4;
+}
+
+/* Arrange visit details and testimonial in two columns */
+.visit .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+
+/* Opening hours table */
+.hours {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table caption and cell alignment */
+.hours caption,
+.hours th,
+.hours td {
+  text-align: left;
+}
+
+/* Space inside table cells */
+.hours th,
+.hours td {
+  padding: 10px 12px;
+}
+
+/* Light green lines between table rows */
+.hours th,
+.hours td {
+  border-bottom: 1px solid #C6F6D5;
+}
+
+/* Table heading row */
+.hours thead {
+  background-color: #2F855A;
+  color: #FFFFFF;
+}
+
+
+/* Customer testimonial */
+.testimonial {
+  padding: 32px;
+  background-color: #FFFFFF;
+  border-left: 6px solid #2F855A;
+  border-radius: 0 12px 12px 0;
+  margin: 0;
+}
+
+/* Testimonial quotation */
+.testimonial p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* Testimonial customer's name */
+.testimonial footer {
+  font-size: 16px;
+  color: #4A5568;
+  font-style: normal;
+}
+
+
+/* Mailing-list section heading and introduction */
+.signup h2,
+.signup > .container > p {
+  text-align: center;
+}
+
+
+/* Mailing-list form layout */
+#signup-form {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+
+/* Form labels */
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Form input fields and dropdown */
+.field input,
+.field select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #A0AEC0;
+  border-radius: 8px;
+  font: inherit;
+}
+
+/* Space between form fields */
+.field {
+  margin-bottom: 20px;
+}
+
+
+/* Form validation error messages */
+.error {
+  font-size: 15px;
+  color: #C53030;
+  min-height: 24px;
+}
+
+
+/* Highlight form fields with validation errors */
+.field input[aria-invalid="true"],
+.field select[aria-invalid="true"] {
+  border: 2px solid #C53030;
+}
+
+
+/* Successful form submission message */
+#form-message.success {
+  background-color: #C6F6D5;
+  color: #22543D;
+  font-weight: 700;
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 520px;
+  margin: 16px auto 0;
+}
+
+
+/* Footer appearance */
+.site-footer {
+  background-color: #22543D;
+  color: #FFFFFF;
+  padding: 32px 0;
+  font-size: 16px;
+}
+
+/* Arrange footer information horizontally */
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Remove default paragraph spacing in the footer */
+.site-footer p {
+  margin: 0;
+}
+
+
+/* Responsive layout for tablets and mobile screens */
+@media (max-width: 768px) {
+
+  /* Reduce heading sizes on smaller screens */
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  /* Reduce section spacing */
+  section {
+    padding: 48px 0;
+  }
+
+  /* Stack the header and footer content vertically */
+  .site-header .container,
+  .site-footer .container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Change grid layouts to one column */
+  .hero .container,
+  .feature-list,
+  .visit .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
